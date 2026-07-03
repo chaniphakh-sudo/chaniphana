@@ -1,0 +1,188 @@
+/* ===== ทั่วไป ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5eee6;
+    color: #4b4038;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg, #e5cfb8, #d9bea0);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #5b4636;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5b4636;
+    margin: 0 15px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #d98c9a;
+    color: white;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: linear-gradient(135deg,#f6ece4,#f2d6dc);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #5b4636;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #6f5c52;
+}
+
+/* ===== รูปหน้าร้าน ===== */
+.shop-image {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.shop-image img {
+    width: 80%;
+    max-width: 750px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.shop-image img:hover {
+    transform: scale(1.03);
+}
+
+/* ===== สินค้า ===== */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.card {
+    width: 230px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin-top: 15px;
+    color: #c86c82;
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
+    padding: 10px;
+}
+
+.card button {
+    display: block;
+    margin: 15px auto 20px;
+    background: #d98c9a;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #bf6b7c;
+}
+
+/* ===== ติดต่อ ===== */
+.contact {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: #c86c82;
+}
+
+.contact p {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #e5cfb8;
+    text-align: center;
+    padding: 18px;
+    margin-top: 50px;
+    color: #5b4636;
+}
+
+/* ===== Responsive ===== */
+@media (max-width:768px){
+
+    .hero h2{
+        font-size:32px;
+    }
+
+    .shop-image img{
+        width:90%;
+    }
+
+    .products{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+        max-width:320px;
+    }
+
+}
